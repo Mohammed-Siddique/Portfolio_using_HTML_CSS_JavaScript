@@ -9,6 +9,9 @@ function PageTransition(){
         secBtn[i].addEventListner('click', ()=> {
             let currentBtn = document.querySelector('.active-btn');
             currentBtn[0].classList = currentBtn[0].className.replace('active-btn', '');
+            this.className += 'active-btn'
         } )
     }
 }
+
+PageTransition();
