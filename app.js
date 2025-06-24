@@ -14,7 +14,14 @@ function PageTransition(){
 
     // Section active class
     allSections.addEventListener('click', (e) => {
-        console.log(e.target);
+        // console.log(e.target);
+        const id = e.target.dataset.id;
+        if (id) {
+            //remove selected from the other btns
+            secBtns.forEach((btn) => {
+                btn.classList.remove('active')
+            })
+        }
     })
 }
 
