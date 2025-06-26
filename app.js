@@ -4,6 +4,7 @@ const secBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
 function PageTransition(){
+    // Button click active class
     for(let i = 0; i < secBtn.length; i++){
         secBtn[i].addEventListener('click', function(){
             let currentBtn = document.querySelectorAll('.active-btn');
@@ -28,7 +29,8 @@ function PageTransition(){
                 section.classList.remove('active')
             })
 
-            const element = document.getElementById(id)
+            const element = document.getElementById(id);
+            element.classList.add('active');
         }
     })
 }
