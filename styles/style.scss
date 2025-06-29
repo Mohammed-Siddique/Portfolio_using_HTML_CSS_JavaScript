@@ -131,3 +131,17 @@ section{
         }
     }
 }
+
+//Header Content
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}
+
+//Independent Components
